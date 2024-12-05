@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using YtBookStore.Models.Domain;
-using YtBookStore.Repositories.Abstract;
+using BookStore.Models.Domain;
+using BookStore.Repositories.Abstract;
 
 namespace BookStore.Models.Services
 {
