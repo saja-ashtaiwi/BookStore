@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using BookStore.BLL;
 using BookStore.Models.Services.Bases;
-using YtBookStore.Models.Domain;
+using BookStore.Models.Domain;
 
 namespace BookStore.Models.Services
 {
