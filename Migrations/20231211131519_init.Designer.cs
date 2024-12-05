@@ -8,7 +8,7 @@ using YtBookStore.Models.Domain;
 
 #nullable disable
 
-namespace YtBookStore.Migrations
+namespace BookStore.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
     [Migration("20231211131519_init")]
@@ -23,7 +23,7 @@ namespace YtBookStore.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("YtBookStore.Models.Domain.Author", b =>
+            modelBuilder.Entity("BookStore.Models.Domain.Author", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -40,7 +40,7 @@ namespace YtBookStore.Migrations
                     b.ToTable("Author");
                 });
 
-            modelBuilder.Entity("YtBookStore.Models.Domain.Book", b =>
+            modelBuilder.Entity("BookStore.Models.Domain.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -73,7 +73,7 @@ namespace YtBookStore.Migrations
                     b.ToTable("Book");
                 });
 
-            modelBuilder.Entity("YtBookStore.Models.Domain.Genre", b =>
+            modelBuilder.Entity("BookStore.Models.Domain.Genre", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -90,7 +90,7 @@ namespace YtBookStore.Migrations
                     b.ToTable("Genre");
                 });
 
-            modelBuilder.Entity("YtBookStore.Models.Domain.Publisher", b =>
+            modelBuilder.Entity("BookStore.Models.Domain.Publisher", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
